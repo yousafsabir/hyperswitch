@@ -73,7 +73,7 @@ private_key = ""  # RSA private key used for signing ID tokens (Generate using: 
 [oidc.client.c1]
 client_id = ""     # OIDC client identifier for the relying party (Generate using: openssl rand -hex 8)
 client_secret = "" # Client secret used to authenticate the client (Generate using: openssl rand -hex 32)
-redirect_uri = ""  # Redirect URI registered for the OIDC client 
+redirect_uri = ""  # Redirect URI registered for the OIDC client
 
 [locker]
 host = ""
@@ -413,7 +413,7 @@ connectors_with_delayed_session_response = "trustpay,payme"
 pay_later = "klarna,affirm"
 
 [webhook_source_verification_call]
-connectors_with_webhook_source_verification_call = "paypal, truelayer"
+connectors_with_webhook_source_verification_call = "paypal"
 
 [billing_connectors_payment_sync]
 billing_connectors_which_require_payment_sync = "stripebilling, recurly"
@@ -1123,7 +1123,7 @@ connector_list = "adyen,archipel,checkout,cybersource,novalnet,stripe,worldpay,w
 connector_list = "peachpayments" # Supported connectors for card only mit
 
 [connector_customer]
-payout_connector_list = "nomupay,stripe,wise,trustly"
+payout_connector_list = "nomupay,stripe,wise"
 
 
 [payment_method_auth]
